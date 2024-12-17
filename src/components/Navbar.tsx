@@ -46,7 +46,7 @@ export default function Navbar() {
           {
             [
               {id: "home", label: "Home", link: "/"},
-              {id: "service", label: "Service", link: "/service"},
+              {id: "service", label: "Service", link: "/product"},
               {id: "team", label: "Team", link: "/team"},
               {id: "about", label: "About Us", link: "/about"},
             ].map((el, idx) => {
@@ -75,7 +75,7 @@ export default function Navbar() {
         <ul className={`${isOpen? 'block': 'hidden'} bg-gradient-to-l from-black to-green-900 absolute w-full min-h-screen text-white left-0 top-20 grid grid-rows-6 items-center justify-start pl-20 gap-10`}>
             <li className='hover:text-[#59E3C6] text-3xl'><Link href="/">Home</Link></li>
             <li className='hover:text-[#59E3C6] text-3xl'><Link href="/team">Teams</Link></li>
-            <li className='hover:text-[#59E3C6] text-3xl'><Link href="/service">Service</Link></li>
+            <li className='hover:text-[#59E3C6] text-3xl'><Link href="/product">Service</Link></li>
             <li className='hover:text-[#59E3C6] text-3xl'><Link href="/about">About</Link></li>
         </ul>
     </nav>
