@@ -2,7 +2,6 @@
 
 import Testmonial from '@/components/Testmonial'
 import { contentfulClient } from '@/lib/contentfulClient'
-import { IContentAsset } from '@/lib/types/contentful.types'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
@@ -24,8 +23,6 @@ export default function page() {
   useEffect(()=> {
     getService()
   },[])
-
-  // console.log('from service', services)
 
   return (
     <div className='flex flex-col w-[60%] mx-auto min-h-screen text-white justify-center py-5'>
